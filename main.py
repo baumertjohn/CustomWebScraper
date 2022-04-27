@@ -15,7 +15,6 @@ driver = Chrome(executable_path="./chromedriver.exe")
 
 def main():
     driver.get(WEBPAGE)
-    # table_data = driver.find_elements_by_tag_name("td")
     table_data = driver.find_elements(By.TAG_NAME, "td")
     name = []
     current_players = []
